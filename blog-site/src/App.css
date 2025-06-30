@@ -105,3 +105,130 @@ button:hover{
   background-color: #7e094d;
   transition-duration: 0ms;
 }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white; /* ✅ Add this */
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./Typographica-Blp5.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logimage {
+  width: 100vw;
+  height: fit-content; 
+  padding: 50px 0; 
+
+  background-image: url('logimage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+/* Centered login box */
+.login-container {
+  background: rgba(252, 173, 239, 1); /* Solid pink */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+/* Subheading */
+.Logheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: -350px;
+  margin-left: -520px;
+  font-family: "MyFont";
+  font-size: 40px;
+  color: #000000;
+}
+.pink-bar {
+   width: 100vw;
+  height: fit-content; 
+  padding: 50px 0; 
+   background-image: url('header.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+  
+
+/* Login title */
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+
+  /* 🔸 Translucent background */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px); /* Optional: adds subtle blur effect */
+
+  /* 🔸 Border & glow */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Slight blue glow */
+
+  /* 🔸 Font */
+  font-size: 1rem;
+  color: #000;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.5); /* Stronger glow on focus */
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
